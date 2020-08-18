@@ -1,3 +1,4 @@
+require('dotenv').config()
 module.exports = {
-    db: 'mongodb+srv://rakhimishra:Rakhi123@cluster0-dgxpd.mongodb.net/Newton?retryWrites=true&w=majority'
+    db: process.env.MONGO_URI
 };

@@ -6,8 +6,8 @@ let database = require('./database/db');
 
 
 const userRoute = require('../server/routes/user-routes')
-
-
+console.log(process.env.MONGO_URI)
+require('dotenv').config()
 mongoose.Promise = global.Promise;
 mongoose.connect(database.db, {
     useNewUrlParser: true
